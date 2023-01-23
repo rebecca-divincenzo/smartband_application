@@ -11,6 +11,13 @@
 		B0046554297E1C6900D78761 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0046553297E1C6900D78761 /* ContentView.swift */; };
 		B0046556297E1C6B00D78761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0046555297E1C6B00D78761 /* Assets.xcassets */; };
 		B0046559297E1C6B00D78761 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0046558297E1C6B00D78761 /* Preview Assets.xcassets */; };
+		B0046561297E1D3D00D78761 /* PersonalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0046560297E1D3D00D78761 /* PersonalData.swift */; };
+		B0046563297E1D4600D78761 /* HeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0046562297E1D4600D78761 /* HeartRate.swift */; };
+		B0046565297E1D4F00D78761 /* BloodPressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0046564297E1D4F00D78761 /* BloodPressure.swift */; };
+		B0046567297E1D5900D78761 /* Respiration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0046566297E1D5900D78761 /* Respiration.swift */; };
+		B0046569297E1D7700D78761 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0046568297E1D7700D78761 /* Activity.swift */; };
+		B004656C297E2F6300D78761 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = B004656B297E2F6300D78761 /* iPhoneNumberField */; };
+		B004656E297E3AA100D78761 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B004656D297E3AA000D78761 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,12 @@
 		B0046553297E1C6900D78761 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B0046555297E1C6B00D78761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0046558297E1C6B00D78761 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B0046560297E1D3D00D78761 /* PersonalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalData.swift; sourceTree = "<group>"; };
+		B0046562297E1D4600D78761 /* HeartRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRate.swift; sourceTree = "<group>"; };
+		B0046564297E1D4F00D78761 /* BloodPressure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressure.swift; sourceTree = "<group>"; };
+		B0046566297E1D5900D78761 /* Respiration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Respiration.swift; sourceTree = "<group>"; };
+		B0046568297E1D7700D78761 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		B004656D297E3AA000D78761 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B004656C297E2F6300D78761 /* iPhoneNumberField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +65,7 @@
 		B0046550297E1C6900D78761 /* smartband_app */ = {
 			isa = PBXGroup;
 			children = (
+				B004655F297E1D0E00D78761 /* Views */,
 				B0046551297E1C6900D78761 /* smartband_appApp.swift */,
 				B0046553297E1C6900D78761 /* ContentView.swift */,
 				B0046555297E1C6B00D78761 /* Assets.xcassets */,
@@ -65,6 +80,19 @@
 				B0046558297E1C6B00D78761 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B004655F297E1D0E00D78761 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B0046560297E1D3D00D78761 /* PersonalData.swift */,
+				B0046562297E1D4600D78761 /* HeartRate.swift */,
+				B0046564297E1D4F00D78761 /* BloodPressure.swift */,
+				B0046566297E1D5900D78761 /* Respiration.swift */,
+				B0046568297E1D7700D78761 /* Activity.swift */,
+				B004656D297E3AA000D78761 /* ImagePicker.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +111,9 @@
 			dependencies = (
 			);
 			name = smartband_app;
+			packageProductDependencies = (
+				B004656B297E2F6300D78761 /* iPhoneNumberField */,
+			);
 			productName = smartband_app;
 			productReference = B004654E297E1C6900D78761 /* smartband_app.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +142,9 @@
 				Base,
 			);
 			mainGroup = B0046545297E1C6900D78761;
+			packageReferences = (
+				B004656A297E2F6300D78761 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */,
+			);
 			productRefGroup = B004654F297E1C6900D78761 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0046567297E1D5900D78761 /* Respiration.swift in Sources */,
 				B0046554297E1C6900D78761 /* ContentView.swift in Sources */,
+				B0046569297E1D7700D78761 /* Activity.swift in Sources */,
 				B0046552297E1C6900D78761 /* smartband_appApp.swift in Sources */,
+				B0046565297E1D4F00D78761 /* BloodPressure.swift in Sources */,
+				B004656E297E3AA100D78761 /* ImagePicker.swift in Sources */,
+				B0046563297E1D4600D78761 /* HeartRate.swift in Sources */,
+				B0046561297E1D3D00D78761 /* PersonalData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +377,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B004656A297E2F6300D78761 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MojtabaHs/iPhoneNumberField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B004656B297E2F6300D78761 /* iPhoneNumberField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B004656A297E2F6300D78761 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */;
+			productName = iPhoneNumberField;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B0046546297E1C6900D78761 /* Project object */;
 }
