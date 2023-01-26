@@ -13,8 +13,8 @@ struct PersonalData: View {
     @State private var first_name = ""
     @State private var last_name = ""
     @State private var birthdate = Date()
-    @State private var sexes = ["Male","Female"]
     @State private var selected_sex = 0
+    @State private var sexes = ["Male","Female"]
     @State private var height = 0
     @State private var weight = 0
     @State private var ec_one = ""
@@ -36,7 +36,7 @@ struct PersonalData: View {
                     },label:{
                         if change_profile_image {
                             HStack{
-                                Text("Home")
+                                Text("Welcome \(first_name)")
                                     .font(.largeTitle)
                                     .fontWeight(.bold)
                                     .foregroundColor(.black)
@@ -47,7 +47,7 @@ struct PersonalData: View {
                                 .clipShape(Circle())}.padding(.all, 30)
                         } else{
                             HStack{
-                                Text("Home")
+                                Text("Welcome \(first_name)")
                                     .font(.largeTitle)
                                     .fontWeight(.bold)
                                     .foregroundColor(.black)
