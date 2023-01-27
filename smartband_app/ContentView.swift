@@ -33,7 +33,7 @@ struct ContentView: View {
             BloodPressure()
                 .tabItem(){
                     Image(systemName: "drop")
-                    Text("Home")
+                    Text("Blood Pressure")
                 }
         }
     }
