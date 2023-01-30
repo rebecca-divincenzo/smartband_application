@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		624A92E72987589C00A64BFE /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 624A92E62987589C00A64BFE /* SwiftUICharts */; };
 		B0046552297E1C6900D78761 /* smartband_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0046551297E1C6900D78761 /* smartband_appApp.swift */; };
 		B0046554297E1C6900D78761 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0046553297E1C6900D78761 /* ContentView.swift */; };
 		B0046556297E1C6B00D78761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0046555297E1C6B00D78761 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B004656C297E2F6300D78761 /* iPhoneNumberField in Frameworks */,
+				624A92E72987589C00A64BFE /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +115,7 @@
 			name = smartband_app;
 			packageProductDependencies = (
 				B004656B297E2F6300D78761 /* iPhoneNumberField */,
+				624A92E62987589C00A64BFE /* SwiftUICharts */,
 			);
 			productName = smartband_app;
 			productReference = B004654E297E1C6900D78761 /* smartband_app.app */;
@@ -144,6 +147,7 @@
 			mainGroup = B0046545297E1C6900D78761;
 			packageReferences = (
 				B004656A297E2F6300D78761 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */,
+				624A92E52987589C00A64BFE /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = B004654F297E1C6900D78761 /* Products */;
 			projectDirPath = "";
@@ -379,6 +383,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		624A92E52987589C00A64BFE /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		B004656A297E2F6300D78761 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MojtabaHs/iPhoneNumberField.git";
@@ -390,6 +402,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		624A92E62987589C00A64BFE /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 624A92E52987589C00A64BFE /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
 		B004656B297E2F6300D78761 /* iPhoneNumberField */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B004656A297E2F6300D78761 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */;

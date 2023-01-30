@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import SwiftUICharts
 
 struct HeartRate: View {
     var body: some View {
-        ZStack{
+        VStack{
+            LineView(data: [85,83,84,85,84,82,81,83,85], title: "Heart Rate", legend: "Today")
+            BarChartView(data: ChartData(points: [80,83,94,82,82,87,87]), title: "Weekly")
             
         }    }
 }
