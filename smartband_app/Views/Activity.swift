@@ -9,11 +9,16 @@ import SwiftUI
 import SwiftUICharts
 
 struct Activity: View {
+    @ObservedObject private var bluetoothViewModel = BluetoothViewModel()
+
     var body: some View {
         VStack{
-            LineView(data: [85,83,84,85,84,82,81,83,85], title: "Activity Rate", legend: "Today")
-            BarChartView(data: ChartData(points: [80,83,94,82,82,87,87]), title: "Weekly")
+            LineView(data: bluetoothViewModel.activity_data, title: "Activity Rate", legend: "Today")
+                .padding([.bottom, .trailing], 20)
+            BarChartView(data: ChartData(points: bluetoothViewModel.activity_data), title: "Weekly")
+                .padding([.bottom, .trailing], 20)
         }
+        .padding(20)
     }
 }
 

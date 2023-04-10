@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		624A92E72987589C00A64BFE /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 624A92E62987589C00A64BFE /* SwiftUICharts */; };
+		B001552029DC928F00426E41 /* BluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001551F29DC928F00426E41 /* BluetoothView.swift */; };
+		B001552A29DCF4DD00426E41 /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001552929DCF4DD00426E41 /* Bluetooth.swift */; };
+		B001552C29DCF7E500426E41 /* CBUUIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001552B29DCF7E500426E41 /* CBUUIDs.swift */; };
+		B001552E29E0F1F900426E41 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B001552D29E0F1F800426E41 /* Media.xcassets */; };
 		B0046552297E1C6900D78761 /* smartband_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0046551297E1C6900D78761 /* smartband_appApp.swift */; };
 		B0046554297E1C6900D78761 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0046553297E1C6900D78761 /* ContentView.swift */; };
 		B0046556297E1C6B00D78761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0046555297E1C6B00D78761 /* Assets.xcassets */; };
@@ -19,9 +23,14 @@
 		B0046569297E1D7700D78761 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0046568297E1D7700D78761 /* Activity.swift */; };
 		B004656C297E2F6300D78761 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = B004656B297E2F6300D78761 /* iPhoneNumberField */; };
 		B004656E297E3AA100D78761 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B004656D297E3AA000D78761 /* ImagePicker.swift */; };
+		B00AE15A29BFC47D005139F7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00AE15929BFC47D005139F7 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B001551F29DC928F00426E41 /* BluetoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothView.swift; sourceTree = "<group>"; };
+		B001552929DCF4DD00426E41 /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
+		B001552B29DCF7E500426E41 /* CBUUIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBUUIDs.swift; sourceTree = "<group>"; };
+		B001552D29E0F1F800426E41 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		B004654E297E1C6900D78761 /* smartband_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartband_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0046551297E1C6900D78761 /* smartband_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartband_appApp.swift; sourceTree = "<group>"; };
 		B0046553297E1C6900D78761 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +42,7 @@
 		B0046566297E1D5900D78761 /* Respiration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Respiration.swift; sourceTree = "<group>"; };
 		B0046568297E1D7700D78761 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		B004656D297E3AA000D78761 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		B00AE15929BFC47D005139F7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,7 @@
 			files = (
 				B004656C297E2F6300D78761 /* iPhoneNumberField in Frameworks */,
 				624A92E72987589C00A64BFE /* SwiftUICharts in Frameworks */,
+				B00AE15A29BFC47D005139F7 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +62,10 @@
 		B0046545297E1C6900D78761 = {
 			isa = PBXGroup;
 			children = (
+				B001552D29E0F1F800426E41 /* Media.xcassets */,
 				B0046550297E1C6900D78761 /* smartband_app */,
 				B004654F297E1C6900D78761 /* Products */,
+				B00AE15829BFC47D005139F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,11 +80,13 @@
 		B0046550297E1C6900D78761 /* smartband_app */ = {
 			isa = PBXGroup;
 			children = (
+				B001552929DCF4DD00426E41 /* Bluetooth.swift */,
 				B004655F297E1D0E00D78761 /* Views */,
 				B0046551297E1C6900D78761 /* smartband_appApp.swift */,
 				B0046553297E1C6900D78761 /* ContentView.swift */,
 				B0046555297E1C6B00D78761 /* Assets.xcassets */,
 				B0046557297E1C6B00D78761 /* Preview Content */,
+				B001552B29DCF7E500426E41 /* CBUUIDs.swift */,
 			);
 			path = smartband_app;
 			sourceTree = "<group>";
@@ -93,8 +108,17 @@
 				B0046566297E1D5900D78761 /* Respiration.swift */,
 				B0046568297E1D7700D78761 /* Activity.swift */,
 				B004656D297E3AA000D78761 /* ImagePicker.swift */,
+				B001551F29DC928F00426E41 /* BluetoothView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B00AE15829BFC47D005139F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B00AE15929BFC47D005139F7 /* MessageUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +172,7 @@
 			packageReferences = (
 				B004656A297E2F6300D78761 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */,
 				624A92E52987589C00A64BFE /* XCRemoteSwiftPackageReference "ChartView" */,
+				B00AE15F29C3674E005139F7 /* XCRemoteSwiftPackageReference "twilio-voice-ios" */,
 			);
 			productRefGroup = B004654F297E1C6900D78761 /* Products */;
 			projectDirPath = "";
@@ -164,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0046559297E1C6B00D78761 /* Preview Assets.xcassets in Resources */,
+				B001552E29E0F1F900426E41 /* Media.xcassets in Resources */,
 				B0046556297E1C6B00D78761 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,11 +203,14 @@
 			files = (
 				B0046567297E1D5900D78761 /* Respiration.swift in Sources */,
 				B0046554297E1C6900D78761 /* ContentView.swift in Sources */,
+				B001552A29DCF4DD00426E41 /* Bluetooth.swift in Sources */,
 				B0046569297E1D7700D78761 /* Activity.swift in Sources */,
 				B0046552297E1C6900D78761 /* smartband_appApp.swift in Sources */,
 				B0046565297E1D4F00D78761 /* BloodPressure.swift in Sources */,
 				B004656E297E3AA100D78761 /* ImagePicker.swift in Sources */,
+				B001552C29DCF7E500426E41 /* CBUUIDs.swift in Sources */,
 				B0046563297E1D4600D78761 /* HeartRate.swift in Sources */,
+				B001552029DC928F00426E41 /* BluetoothView.swift in Sources */,
 				B0046561297E1D3D00D78761 /* PersonalData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,8 +340,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"smartband_app/Preview Content\"";
+				DEVELOPMENT_TEAM = Z6ZG8KH6H8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow for bluetooth use.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow the use of Bluetooth devices";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,6 +355,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "SmartBand.smartband-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -339,8 +372,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"smartband_app/Preview Content\"";
+				DEVELOPMENT_TEAM = Z6ZG8KH6H8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow for bluetooth use.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow the use of Bluetooth devices";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -351,6 +387,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "SmartBand.smartband-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -397,6 +434,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.9.0;
+			};
+		};
+		B00AE15F29C3674E005139F7 /* XCRemoteSwiftPackageReference "twilio-voice-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twilio/twilio-voice-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

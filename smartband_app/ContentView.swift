@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
         TabView{
@@ -30,11 +31,11 @@ struct ContentView: View {
                     Image(systemName: "lungs")
                     Text("Respiration")
                 }
-            BloodPressure()
-                .tabItem(){
-                    Image(systemName: "drop")
-                    Text("Blood Pressure")
-                }
+            BluetoothView()
+            .tabItem(){
+                Image(systemName: "applewatch.watchface")
+                Text("Devices")
+            }
         }
     }
 }
