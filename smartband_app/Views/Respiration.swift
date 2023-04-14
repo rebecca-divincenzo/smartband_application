@@ -11,7 +11,7 @@ struct Respiration: View {
     @ObservedObject private var bluetoothViewModel = BluetoothViewModel()
     var body: some View {
         VStack{
-            LineView(data: bluetoothViewModel.oxygen_data, title: "Respiration Rate", legend: "Today")
+            LineView(data: bluetoothViewModel.oxygen_data, title: "Oxygen Saturation", legend: "Today")
                 .padding([.bottom, .trailing], 20)
             BarChartView(data: ChartData(points: bluetoothViewModel.oxygen_data), title: "Weekly")
                 .padding([.bottom, .trailing], 20)

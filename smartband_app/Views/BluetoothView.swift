@@ -163,7 +163,7 @@ extension BluetoothViewModel: CBPeripheralDelegate {
         } else if self.peripheralServices.last == "20"{
             print("Oxygen: \(characteristicValue[0])\n")
             if characteristicValue[0] != 0 {
-                if characteristicValue[0] < 86 {
+                if characteristicValue[0] < 70 {
                     self.contact_emergency = true
                 }
                 self.oxygen_data.append(Double(characteristicValue[0]))
